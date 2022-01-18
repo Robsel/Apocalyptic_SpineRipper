@@ -1,0 +1,91 @@
+[15Jan.2022 08:27:14.973] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 1.18, --assetsDir, C:\Users\kraet\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 39.0.9, --fml.mcVersion, 1.18.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20211210.034407]
+[15Jan.2022 08:27:14.977] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 9.0.21+9.0.21+main.6bb4b073 starting: java version 17.0.1 by Eclipse Adoptium
+[15Jan.2022 08:27:15.120] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/kraet/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%2327! Service=ModLauncher Env=CLIENT
+[15Jan.2022 08:27:17.115] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\kraet\.gradle\caches\forge_gradle\assets, --assetIndex, 1.18]
+[08:27:23] [Render thread/WARN]: Assets URL 'union:/C:/Users/kraet/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.0.9_mapped_official_1.18.1/forge-1.18.1-39.0.9_mapped_official_1.18.1-recomp.jar%2377!/assets/.mcassetsroot' uses unexpected schema
+[08:27:23] [Render thread/WARN]: Assets URL 'union:/C:/Users/kraet/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.18.1-39.0.9_mapped_official_1.18.1/forge-1.18.1-39.0.9_mapped_official_1.18.1-recomp.jar%2377!/data/.mcassetsroot' uses unexpected schema
+[15Jan.2022 08:27:23.835] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08:27:23] [Render thread/INFO]: Setting user: Dev
+[08:27:23] [Render thread/INFO]: Backend library: LWJGL version 3.2.2 SNAPSHOT
+[08:27:24] [Render thread/ERROR]: Null comment for config option server, this is invalid and may be disallowed in the future.
+[08:27:25] [modloading-worker-0/INFO]: Forge mod loading, version 39.0.9, for MC 1.18.1 with MCP 20211210.034407
+[08:27:25] [modloading-worker-0/INFO]: MinecraftForge v39.0.9 Initialized
+[15Jan.2022 08:27:28.097] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[08:27:28] [Render thread/INFO]: Reloading ResourceManager: Default, Mod Resources
+[15Jan.2022 08:27:29.300] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[15Jan.2022 08:27:30.966] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: BETA_OUTDATED Current: 39.0.9 Target: 39.0.20
+[08:27:36] [Worker-Main-15/WARN]: Unable to load model: 'minecraft:block' referenced from: asmain:dh_ore_center#: java.io.FileNotFoundException: minecraft:models/block.json
+[08:27:36] [Worker-Main-15/WARN]: Exception loading blockstate definition: asmain:blockstates/altar_main.json: java.io.FileNotFoundException: asmain:blockstates/altar_main.json
+[08:27:36] [Worker-Main-15/WARN]: Exception loading blockstate definition: 'asmain:blockstates/altar_main.json' missing model for variant: 'asmain:altar_main#'
+[08:27:38] [Worker-Main-15/WARN]: Unable to resolve texture reference: #missing in asmain:item/weird_bone_block
+[08:27:38] [Worker-Main-15/WARN]: Unable to resolve texture reference: #missing in asmain:block/weird_bone_block
+[08:27:42] [Render thread/INFO]: OpenAL initialized on device OpenAL Soft on Kopfhörer (Razer Kraken 7.1 V2)
+[08:27:42] [Render thread/INFO]: Sound engine started
+[08:27:42] [Render thread/INFO]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[08:27:42] [Render thread/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[08:27:44] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[08:27:44] [Render thread/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[08:27:44] [Render thread/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[08:27:45] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[08:27:50] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:50] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:50] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:27:50] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:27:50] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:50] [Render thread/INFO]: Reloading ResourceManager: Default, , main
+[08:27:54] [Render thread/INFO]: Loaded 7 recipes
+[08:27:56] [Render thread/INFO]: Loaded 1141 advancements
+[08:27:57] [Render thread/INFO]: Injecting existing registry data into this CLIENT instance
+[08:27:58] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:58] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:58] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:27:58] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08:27:58] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08:27:58] [Render thread/INFO]: Reloading ResourceManager: Default, , main
+[08:28:01] [Render thread/INFO]: Loaded 7 recipes
+[08:28:04] [Render thread/INFO]: Loaded 1141 advancements
+[08:28:04] [Render thread/INFO]: Injecting existing registry data into this CLIENT instance
+[15Jan.2022 08:28:05.371] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[08:28:05] [Server thread/INFO]: Starting integrated minecraft server version 1.18.1
+[08:28:05] [Server thread/INFO]: Generating keypair
+[08:28:05] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[08:28:06] [Render thread/INFO]: Preparing spawn area: 0%
+[08:28:06] [Render thread/INFO]: Preparing spawn area: 0%
+[08:28:06] [Render thread/INFO]: Preparing spawn area: 0%
+[08:28:07] [Render thread/INFO]: Preparing spawn area: 0%
+[08:28:07] [Render thread/INFO]: Preparing spawn area: 0%
+[08:28:08] [Render thread/INFO]: Preparing spawn area: 8%
+[08:28:08] [Render thread/INFO]: Preparing spawn area: 14%
+[08:28:09] [Render thread/INFO]: Preparing spawn area: 26%
+[08:28:09] [Render thread/INFO]: Preparing spawn area: 57%
+[08:28:10] [Render thread/INFO]: Preparing spawn area: 85%
+[08:28:10] [Render thread/INFO]: Preparing spawn area: 94%
+[08:28:11] [Server thread/INFO]: Successfully initialized permission handler forge:default_handler
+[08:28:11] [Render thread/INFO]: Time elapsed: 5320 ms
+[08:28:11] [Server thread/INFO]: Changing view distance to 12, from 10
+[08:28:11] [Server thread/INFO]: Changing simulation distance to 12, from 0
+[08:28:12] [Netty Local Client IO #0/INFO]: Connected to a modded server.
+[08:28:12] [Server thread/INFO]: Using new advancement loading for net.minecraft.server.PlayerAdvancements@30cc6e13
+[08:28:12] [Server thread/INFO]: Dev[local:E:d794888b] logged in with entity id 37 at (-20.93407127562427, -60.0, 70.40612041743462)
+[08:28:12] [Server thread/INFO]: Dev joined the game
+[08:28:12] [Render thread/INFO]: Loaded 56 advancements
+[08:28:25] [Render thread/INFO]: Loaded 57 advancements
+[08:29:11] [Render thread/INFO]: Stopping!
+[08:29:11] [Server thread/INFO]: Dev lost connection: Disconnected
+[08:29:11] [Server thread/INFO]: Dev left the game
+[08:29:11] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[08:29:11] [Server thread/INFO]: Stopping server
+[08:29:11] [Server thread/INFO]: Saving players
+[08:29:11] [Server thread/INFO]: Saving worlds
+[08:29:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[08:29:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[08:29:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[08:29:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[08:29:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08:29:11] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08:29:11] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved

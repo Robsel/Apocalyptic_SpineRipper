@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "asmain:altar_main",
+    "asmain:altar_boost",
+    "asmain:altar_crystal",
+    "asmain:altar_fence",
+    "asmain:altar_frame",
+    "asmain:altar_ped",
+    "asmain:altar_sacr",
+    "asmain:altar_slab",
+    "asmain:altar_tablet"
+  ]
+}

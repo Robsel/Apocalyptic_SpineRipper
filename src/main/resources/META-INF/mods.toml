@@ -1,0 +1,48 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="All rights reserved"
+[[mods]]
+modId="asmain"
+version="666"
+displayName="Apocalyptic Spineripper"
+logoFile="asmain.png"
+credits="CRUSH YOUR ENEMIES"
+authors="SATAN, CTHULU and Robsel"
+description='''
+
+
+I CONJURE THEE RIPPER OF SPINES INVOKER OF RAGNAROK
+
+
+NONE SHALL BE SAFE FROM THY EXCRUTIATING POWER RIVALING like at least a stone sword
+
+WITH MAGNIFICENT CHAOS YOU SHALL BRING DOOM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                    APOCALYPTIC SPINERIPPER
+'''
+
+[[dependencies.asmain]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.asmain]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"

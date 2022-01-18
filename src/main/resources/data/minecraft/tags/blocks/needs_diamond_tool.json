@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "asmain:dh_ore_center",
+    "asmain:dh_ore_corner",
+    "asmain:dh_ore_side",
+    "asmain:dh_ore",
+    "asmain:dh_ore_ped",
+    "asmain:weird_bone_block"
+  ]
+}
