@@ -1,10 +1,12 @@
 package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
+import com.robsel.asmain.block.Rotatable_Madness;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -23,29 +25,34 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ASMain.MOD_ID);
 
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
-
+    //
     //BLOCKS
+    //
     public static final RegistryObject<Block> CONGEALED_CTHULU_BLOCK = register("congealed_cthulu_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.CAKE, MaterialColor.COLOR_GREEN).strength(0.7f)
                     .sound(SoundType.SLIME_BLOCK).explosionResistance(25000f)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-    //ORES
-    public static final RegistryObject<Block> DH_ORE = register("dh_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-
-    public static final RegistryObject<Block> DH_ORE_CENTER = register("dh_ore_center",
-            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+    //
+    //DIRECTIONAL ORES
+    //
+    public static final RegistryObject<Block> DH_ORE_CENTER = register(
+            "dh_ore_center",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f).sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> DH_ORE_CORNER = register("dh_ore_corner",
-            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-    
+
     public static final RegistryObject<Block> DH_ORE_SIDE = register("dh_ore_side",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+    //
+    //ORES
+    //
+    public static final RegistryObject<Block> DH_ORE = register("dh_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
@@ -59,8 +66,9 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.of(Material.ICE_SOLID, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.AMETHYST_CLUSTER).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-
+    //
     //ALTAR
+    //
     public static final RegistryObject<Block> ALTAR_MAIN = register("altar_main",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
