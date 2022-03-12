@@ -137,6 +137,12 @@
     },
     "done": true
   },
+  "asmain:tentacleonastick": {
+    "criteria": {
+      "requirement": "2022-03-12 20:37:43 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/wooden_shovel": {
     "criteria": {
       "has_stick": "2022-03-04 11:32:58 +0100"

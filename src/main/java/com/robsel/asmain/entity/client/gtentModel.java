@@ -19,6 +19,6 @@ public class gtentModel extends AnimatedGeoModel<gtent> {
 
     @Override
     public ResourceLocation getAnimationFileLocation(gtent animatable) {
-        return new ResourceLocation(ASMain.MOD_ID, "animations.gtent.json");
+        return new ResourceLocation(ASMain.MOD_ID, "animations/gtent.animation.json");
     }
 }

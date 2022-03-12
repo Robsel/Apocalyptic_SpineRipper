@@ -15,7 +15,6 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.event.world.NoteBlockEvent;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -39,7 +38,7 @@ public class gtent extends Animal implements IAnimatable {
                 .add(Attributes.ATTACK_DAMAGE, 6.0f)
                 .add(Attributes.ATTACK_SPEED, 0.5f)
                 .add(Attributes.ATTACK_KNOCKBACK, 3.0f)
-                .add(Attributes.MOVEMENT_SPEED, 1.0f).build();
+                .add(Attributes.MOVEMENT_SPEED, 0.2f).build();
     }
 
     protected void registerGoals() {

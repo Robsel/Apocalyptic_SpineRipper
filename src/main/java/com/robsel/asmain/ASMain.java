@@ -34,6 +34,7 @@ public class ASMain {
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         ModEntityTypes.register(bus);
+        bus.addListener(this::clientSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
