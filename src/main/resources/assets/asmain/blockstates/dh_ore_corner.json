@@ -1,6 +1,28 @@
 {
   "variants": {
-    "":
-    {"model": "asmain:block/dh_ore_corner"}
+    "facing=north": {
+      "model": "asmain:block/dh_ore_corner",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "asmain:block/dh_ore_corner",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "asmain:block/dh_ore_corner",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "asmain:block/dh_ore_corner",
+      "y": 270
+    },
+    "facing=down": {
+      "model": "asmain:block/dh_ore_corner",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "asmain:block/dh_ore_corner",
+      "x": -90
+    }
   }
 }

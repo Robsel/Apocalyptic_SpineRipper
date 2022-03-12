@@ -2,6 +2,7 @@ package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
 import com.robsel.asmain.block.Rotatable_Madness;
+import com.robsel.asmain.block.Weird_Bone;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -25,6 +26,7 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ASMain.MOD_ID);
 
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
+
     //
     //BLOCKS
     //
@@ -63,7 +65,7 @@ public class BlockInit {
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> WEIRD_BONE_BLOCK = register("weird_bone_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.ICE_SOLID, MaterialColor.COLOR_GREEN).strength(3.0f)
+            () -> new Weird_Bone(BlockBehaviour.Properties.of(Material.ICE_SOLID, MaterialColor.COLOR_GREEN).noOcclusion().strength(3.0f)
                     .sound(SoundType.AMETHYST_CLUSTER).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
     //

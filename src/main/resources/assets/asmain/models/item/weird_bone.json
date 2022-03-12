@@ -1,5 +1,5 @@
 {
-  "parent": "item/generated",
+  "parent": "asmain:block/weird_bone_block_item",
   "textures": {
     "layer0": "asmain:item/weird_bone"
   }

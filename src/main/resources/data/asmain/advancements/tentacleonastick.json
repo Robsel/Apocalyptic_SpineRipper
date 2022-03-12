@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "asmain:tentacleonastick"
+    },
+    "title": "Madness on a Stick more like",
+    "description": "Powerful arms, yet I can't reach down this stick >:(",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "asmain:textures/block/dh_front.png"
+  },
+  "criteria":{
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions":{
+        "items": [
+          {
+            "items": [
+              "asmain:tentacleonastick"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

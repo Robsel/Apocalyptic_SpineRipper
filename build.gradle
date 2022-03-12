@@ -76,11 +76,12 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.1-39.0.9'
+    minecraft 'net.minecraftforge:forge:1.18.1-39.1.0'
+    implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.10')
 }
 
 jar {

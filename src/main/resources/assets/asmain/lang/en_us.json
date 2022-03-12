@@ -17,5 +17,7 @@
   "block.asmain.altar_slab": "Infested Slab",
   "block.asmain.altar_tablet": "Knowledgeable Horror",
   "item.asmain.weird_bone": "Weird Bone",
-  "block.asmain.weird_bone_block": "Weird Bone"
+  "block.asmain.weird_bone_block": "Weird Bone",
+  "item.asmain.tentacleonastick": "Tentacle on a Stick",
+  "item.asmain.gtent_spawn_egg": "Green Tentacle Spawn Egg"
 }

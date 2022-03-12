@@ -18,11 +18,11 @@
       },
     "facing=down": {
       "model": "asmain:block/dh_ore_center",
-      "z": 0
+      "x": 90
     },
     "facing=up": {
       "model": "asmain:block/dh_ore_center",
-      "z": 180
+      "x": -90
     }
   }
 }

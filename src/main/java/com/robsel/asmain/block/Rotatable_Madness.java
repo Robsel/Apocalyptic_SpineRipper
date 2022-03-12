@@ -1,49 +1,44 @@
 package com.robsel.asmain.block;
 
-import com.ibm.icu.lang.UCharacter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
-import net.minecraft.world.level.block.Mirror;
-import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import org.lwjgl.system.CallbackI;
+
 
 public class Rotatable_Madness extends Block {
 
-    public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+    public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
-    public static final DirectionProperty
-    public Rotatable_Madness(Properties properties) {
-        super(properties);
+    public Rotatable_Madness(Properties settings) {
+        super(settings);
 
-        this.registerDefaultState(this.defaultBlockState().setValue(FACING, Direction.NORTH));
+        this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 
     @Override
+    public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortune, int silktouch) {
+        return 15;
+    }
+
+    public BlockState getStateForPlacement(BlockPlaceContext ctx) {
+        return this.defaultBlockState().setValue(FACING, ctx.getNearestLookingDirection().getOpposite());
+    }
+
+    public BlockState rotate(BlockState state, Rotation rotation) {
+        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+    }
+
+    @SuppressWarnings("deprication")
+    public BlockState mirror(BlockState state, Rotation rotation) {
+        return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
+    }
+
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
-        super.createBlockStateDefinition(builder);
-    }
-
-    @Override
-    public BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirror) {
-        return state.rotate(mirror.getRotation(state.getValue(FACING)));
-    }
-
-    @Override
-    public BlockState rotate(BlockState state, LevelAccessor world, BlockPos pos, Rotation direction) {
-        return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
     }
 }

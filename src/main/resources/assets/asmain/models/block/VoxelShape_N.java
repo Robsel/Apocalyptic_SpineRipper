@@ -1,0 +1,23 @@
+Stream.of(
+Block.box(7, 13, 8, 9, 15, 9),
+Block.box(9, 14, 8, 10, 16, 9),
+Block.box(6, 10, 7, 7, 15, 8),
+Block.box(4, 2, 7, 5, 7, 9),
+Block.box(7, 7, 6, 10, 11, 7),
+Block.box(5, 4, 6, 6, 6, 7),
+Block.box(11, 7, 7, 12, 10, 8),
+Block.box(12, 2, 7, 13, 7, 9),
+Block.box(8, 11, 6, 9, 12, 7),
+Block.box(11, 3, 6, 12, 6, 7),
+Block.box(6, 2, 6, 11, 7, 7),
+Block.box(5, 1, 7, 13, 2, 10),
+Block.box(5, 7, 7, 7, 10, 8),
+Block.box(10, 7, 7, 11, 10, 8),
+Block.box(9, 14, 7, 10, 15, 8),
+Block.box(7, 7, 7, 10, 14, 8),
+Block.box(5, 2, 7, 12, 7, 8),
+Block.box(0, 0, 0, 16, 1, 16),
+Block.box(10, 14, 8, 11, 16, 9),
+Block.box(6, 12, 8, 7, 14, 9),
+Block.box(10, 10, 7, 11, 15, 8)
+).reduce((v1, v2) -> VoxelShapes.join(v1, v2, IBooleanFunction.OR)).get();
