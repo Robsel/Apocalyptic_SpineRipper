@@ -1,14 +1,13 @@
 package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
+import com.robsel.asmain.block.Cthulu_Lamp;
 import com.robsel.asmain.block.Rotatable_Madness;
 import com.robsel.asmain.block.Weird_Bone;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -27,6 +26,14 @@ public class BlockInit {
 
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 
+    //
+    //FUNCTIONAL BLOCKS
+    //
+    public static final RegistryObject<Block> CTHULU_LAMP = register("cthulu_lamp",
+            () -> new Cthulu_Lamp(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_GREEN).strength(0.9f)
+                    .sound(SoundType.LANTERN)
+                    .lightLevel((state) -> state.getValue(Cthulu_Lamp.CLICKED) ? 15 : 0)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
     //
     //BLOCKS
     //
@@ -55,13 +62,13 @@ public class BlockInit {
     //ORES
     //
     public static final RegistryObject<Block> DH_ORE = register("dh_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops(), UniformInt.of(8, 11)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> DH_ORE_PED = register("dh_ore_ped",
-            () -> new Block(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops(), UniformInt.of(12, 20)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> WEIRD_BONE_BLOCK = register("weird_bone_block",

@@ -4,6 +4,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
@@ -24,6 +25,10 @@ public class Weird_Bone  extends Block {
     public Weird_Bone(Properties properties) {
         super(properties);
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH));
+    }
+    @Override
+    public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortune, int silktouch) {
+        return 30;
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(
