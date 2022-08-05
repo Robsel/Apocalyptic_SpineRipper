@@ -1,6 +1,6 @@
 {
   "variants": {
     "":
-    {"model": "asmain:block/congealed_cthulu_block"}
+    {"model": "asmain:models/block/congealed_cthulu_block"}
   }
 }

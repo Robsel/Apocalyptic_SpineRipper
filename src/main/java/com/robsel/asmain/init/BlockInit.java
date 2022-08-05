@@ -38,7 +38,7 @@ public class BlockInit {
     //BLOCKS
     //
     public static final RegistryObject<Block> CONGEALED_CTHULU_BLOCK = register("congealed_cthulu_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE, MaterialColor.COLOR_GREEN).strength(0.7f)
+            () -> new Block(BlockBehaviour.Properties.of(Material.SPONGE, MaterialColor.COLOR_GREEN).strength(0.7f)
                     .sound(SoundType.SLIME_BLOCK).explosionResistance(25000f)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
     //
