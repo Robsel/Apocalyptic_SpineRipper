@@ -2,6 +2,7 @@ package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
 import com.robsel.asmain.block.Cthulu_Lamp;
+import com.robsel.asmain.block.Energy_Crystal;
 import com.robsel.asmain.block.Rotatable_Madness;
 import com.robsel.asmain.block.Weird_Bone;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -34,6 +35,21 @@ public class BlockInit {
                     .sound(SoundType.LANTERN)
                     .lightLevel((state) -> state.getValue(Cthulu_Lamp.CLICKED) ? 15 : 0)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+
+    //
+    //WALLS
+    //
+
+    public static final RegistryObject<Block> DARK_WALL = register("dark_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+
+    public static final RegistryObject<Block> DARK_GATE = register("dark_gate",
+            () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+
     //
     //BLOCKS
     //
@@ -99,16 +115,11 @@ public class BlockInit {
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> ALTAR_CRYSTAL = register("altar_crystal",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
+            () -> new Energy_Crystal(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
     public static final RegistryObject<Block> ALTAR_SLAB = register("altar_slab",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-
-    public static final RegistryObject<Block> ALTAR_FENCE = register("altar_fence",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));

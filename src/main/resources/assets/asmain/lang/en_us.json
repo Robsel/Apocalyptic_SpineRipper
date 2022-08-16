@@ -20,5 +20,7 @@
   "block.asmain.weird_bone_block": "Weird Bone",
   "item.asmain.tentacleonastick": "Tentacle on a Stick",
   "item.asmain.gtent_spawn_egg": "Green Tentacle Spawn Egg",
-  "block.asmain.cthulu_lamp": "Infested Lamp"
+  "block.asmain.cthulu_lamp": "Infested Lamp",
+  "block.asmain.dark_wall": "Dark Wall",
+  "block.asmain.dark_gate": "Dark Gate"
 }
