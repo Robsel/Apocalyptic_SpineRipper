@@ -22,5 +22,6 @@
   "item.asmain.gtent_spawn_egg": "Green Tentacle Spawn Egg",
   "block.asmain.cthulu_lamp": "Infested Lamp",
   "block.asmain.dark_wall": "Dark Wall",
-  "block.asmain.dark_gate": "Dark Gate"
+  "block.asmain.dark_gate": "Dark Gate",
+  "block.asmain.energy_crystal": "Energy Crystal"
 }

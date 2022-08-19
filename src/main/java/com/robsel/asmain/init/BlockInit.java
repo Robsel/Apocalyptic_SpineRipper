@@ -114,8 +114,8 @@ public class BlockInit {
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
-    public static final RegistryObject<Block> ALTAR_CRYSTAL = register("altar_crystal",
-            () -> new Energy_Crystal(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
+    public static final RegistryObject<Block> ENERGY_CRYSTAL = register("energy_crystal",
+            () -> new Energy_Crystal(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).noOcclusion().strength(3.0f)
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
