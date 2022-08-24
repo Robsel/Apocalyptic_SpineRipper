@@ -1,11 +1,12 @@
 package com.robsel.asmain.block;
 
-import net.minecraft.*;
+
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,6 +17,23 @@ import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import it.zerono.mods.zerocore.lib.CodeHelper;
+import it.zerono.mods.zerocore.lib.IDebugMessages;
+import it.zerono.mods.zerocore.lib.IDebuggable;
+import it.zerono.mods.zerocore.lib.block.ModBlock;
+import it.zerono.mods.zerocore.lib.block.multiblock.IMultiblockPartTypeProvider;
+import it.zerono.mods.zerocore.lib.data.IoDirection;
+import it.zerono.mods.zerocore.lib.data.IteratorTracker;
+import it.zerono.mods.zerocore.lib.data.geometry.CuboidBoundingBox;
+import it.zerono.mods.zerocore.lib.data.stack.AllowedHandlerAction;
+import it.zerono.mods.zerocore.lib.data.stack.OperationMode;
+import it.zerono.mods.zerocore.lib.energy.EnergyBuffer;
+import it.zerono.mods.zerocore.lib.multiblock.IMultiblockController;
+import it.zerono.mods.zerocore.lib.multiblock.IMultiblockPart;
+import it.zerono.mods.zerocore.lib.multiblock.ITickableMultiblockPart;
+import it.zerono.mods.zerocore.lib.multiblock.cuboid.AbstractCuboidMultiblockPart;
+import it.zerono.mods.zerocore.lib.multiblock.validation.IMultiblockValidator;
+import it.zerono.mods.zerocore.lib.world.WorldHelper;
 
 import java.util.stream.Stream;
 
@@ -27,7 +45,11 @@ public class Energy_Crystal extends Block {
     public Energy_Crystal(Properties properties) {
         super(properties);
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH));
+
     }
+
+
+
     private static final VoxelShape energy_crystal = Stream.of(
             Block.box(5, 7, 5, 11, 22, 13),
             Block.box(6, 5, 6, 10, 24, 12),

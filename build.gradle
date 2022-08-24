@@ -1,5 +1,7 @@
 buildscript {
     repositories {
+        maven { name = 'Zero'
+                url = 'https://maven.zerono.it' }
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
@@ -7,6 +9,7 @@ buildscript {
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
+        classpath 'it.zerono.mods.zerocore:ZeroCore2:1.18.1-2.1.9'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -77,11 +80,17 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven {
+
+        name = 'Zero'
+        url = 'https://maven.zerono.it'
+    }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.1-39.1.0'
     implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.10')
+    implementation fg.deobf("it.zerono.mods.zerocore:ZeroCore2:1.18.1-2.1.9")
 }
 
 jar {
