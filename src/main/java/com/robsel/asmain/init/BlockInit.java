@@ -32,7 +32,7 @@ public class BlockInit {
     //
     public static final RegistryObject<Block> CTHULU_LAMP = register("cthulu_lamp",
             () -> new Cthulu_Lamp(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_GREEN).strength(0.9f)
-                    .sound(SoundType.LANTERN)
+                    .sound(SoundType.LANTERN).noOcclusion()
                     .lightLevel((state) -> state.getValue(Cthulu_Lamp.CLICKED) ? 15 : 0)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
 
@@ -53,9 +53,15 @@ public class BlockInit {
     //
     //BLOCKS
     //
+
+    public static final RegistryObject<Block> CULTIST_WORKSTATION = register("cultist_workstation",
+            () -> new Block(BlockBehaviour.Properties.of(Material.NETHER_WOOD, MaterialColor.COLOR_GREEN).strength(0.7f)
+                    .sound(SoundType.LADDER).explosionResistance(25f)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+
     public static final RegistryObject<Block> CONGEALED_CTHULU_BLOCK = register("congealed_cthulu_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.SPONGE, MaterialColor.COLOR_GREEN).strength(0.7f)
-                    .sound(SoundType.SLIME_BLOCK).explosionResistance(25000f)),
+            () -> new HalfTransparentBlock(BlockBehaviour.Properties.of(Material.SPONGE, MaterialColor.COLOR_GREEN).strength(0.7f)
+                    .sound(SoundType.SLIME_BLOCK).explosionResistance(20f).noOcclusion()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
     //
     //DIRECTIONAL ORES

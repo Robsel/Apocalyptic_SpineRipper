@@ -19,6 +19,12 @@ public class ModEntityTypes {
                     .sized(0.8f, 1.1f)
                     .build(new ResourceLocation(ASMain.MOD_ID, "gtent").toString()));
 
+ /*   public static final RegistryObject<EntityType<cultist>> CULTIST = ENTITY_TYPES.register("cultist",
+            () -> EntityType.Builder.of(gtent::new, MobCategory.MONSTER)
+                    .sized(0.8f, 1.1f)
+                    .build(new ResourceLocation(ASMain.MOD_ID, "cultist").toString()));
+*/
+
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

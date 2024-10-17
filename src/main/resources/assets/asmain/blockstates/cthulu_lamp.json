@@ -1,5 +1,9 @@
 {
   "variants": {
+    "facing=north": {"model": "asmain:block/cthulu_lamp", "y": 0},
+    "facing=east": {"model": "asmain:block/cthulu_lamp_on", "y": 90},
+    "facing=south": {"model": "asmain:block/cthulu_lamp_on", "y":  180},
+    "facing=west": {"model": "asmain:block/cthulu_lamp_on", "y":  270},
     "clicked=false": { "model":  "asmain:block/cthulu_lamp_off"},
     "clicked=true": { "model":  "asmain:block/cthulu_lamp_on"}
   }
