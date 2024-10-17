@@ -44,12 +44,12 @@ public class BlockInit {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-
+/*
     public static final RegistryObject<Block> DARK_GATE = register("dark_gate",
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-
+*/
     //
     //BLOCKS
     //
