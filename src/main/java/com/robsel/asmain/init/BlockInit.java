@@ -1,6 +1,7 @@
 package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
+import com.robsel.asmain.altar.AltarStoneInsBlock;
 import com.robsel.asmain.block.Cthulu_Lamp;
 import com.robsel.asmain.block.Energy_Crystal;
 import com.robsel.asmain.block.Rotatable_Madness;
@@ -44,12 +45,12 @@ public class BlockInit {
             () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-/*
+
     public static final RegistryObject<Block> DARK_GATE = register("dark_gate",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-*/
+
     //
     //BLOCKS
     //
@@ -100,6 +101,10 @@ public class BlockInit {
     //
     //ALTAR
     //
+    public static final RegistryObject<Block> ALTAR_STONE_CONTROLLER = register("altar_controller",
+            () -> new AltarStoneInsBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
     public static final RegistryObject<Block> ALTAR_MAIN = register("altar_main",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
                     .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),

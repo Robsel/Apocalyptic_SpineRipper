@@ -1,0 +1,6 @@
+{
+  "parent": "asmain:block/energy_crystal",
+  "textures": {
+    "inventory": "asmain:block/energy_crystal"
+  }
+}
