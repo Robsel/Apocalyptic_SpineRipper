@@ -1,4 +1,4 @@
-package com.robsel.asmain.altar;
+package com.robsel.asmain.blockentity;
 
 import com.robsel.asmain.init.BlockEntitiesInit;
 import net.minecraft.core.BlockPos;

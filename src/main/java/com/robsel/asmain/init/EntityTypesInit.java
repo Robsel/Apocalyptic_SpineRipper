@@ -1,4 +1,4 @@
-package com.robsel.asmain.entity;
+package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
 import com.robsel.asmain.entity.custom.gtent;
@@ -10,7 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModEntityTypes {
+public class EntityTypesInit {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITIES, ASMain.MOD_ID);
 

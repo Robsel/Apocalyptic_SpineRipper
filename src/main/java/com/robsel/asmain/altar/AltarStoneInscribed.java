@@ -1,5 +1,6 @@
 package com.robsel.asmain.altar;
 
+import com.robsel.asmain.init.BlockEntitiesInit;
 import com.robsel.asmain.init.BlockInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
@@ -38,7 +39,7 @@ public class AltarStoneInscribed {
         BlockPos controllerPos = startPos;  // Adjust this as needed based on the structure's layout
 
         // Place an invisible block that holds the BlockEntity responsible for rendering the multiblock
-        world.(controllerPos, BlockInit.ALTAR_STONE_CONTROLLER.get().defaultBlockState(), 3);
+        //world.setBlockEntity(BlockEntitiesInit.ALTAR_STONE_ENTITY.get());
 
         // The ALTAR_MAIN blocks are not replaced; the BlockEntity at controllerPos handles rendering
     }

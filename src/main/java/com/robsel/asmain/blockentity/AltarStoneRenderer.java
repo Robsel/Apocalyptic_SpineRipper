@@ -1,14 +1,11 @@
-package com.robsel.asmain.altar;
+package com.robsel.asmain.blockentity;
 
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.robsel.asmain.init.BlockEntitiesInit;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.resources.model.*;
 import com.mojang.blaze3d.vertex.PoseStack;

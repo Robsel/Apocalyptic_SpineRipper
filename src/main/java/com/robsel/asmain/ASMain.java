@@ -1,7 +1,7 @@
 package com.robsel.asmain;
 
-import com.robsel.asmain.altar.AltarStoneRenderer;
-import com.robsel.asmain.entity.ModEntityTypes;
+import com.robsel.asmain.blockentity.AltarStoneRenderer;
+import com.robsel.asmain.init.EntityTypesInit;
 import com.robsel.asmain.entity.client.gtentRenderer;
 import com.robsel.asmain.init.BlockEntitiesInit;
 import com.robsel.asmain.init.BlockInit;
@@ -15,12 +15,12 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib3.GeckoLib;
 
 @Mod("asmain")
 public class ASMain {
@@ -38,10 +38,11 @@ public class ASMain {
     public ASMain() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        GeckoLib.initialize();
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         BlockEntitiesInit.BLOCK_ENTITIES.register(bus);
-        ModEntityTypes.register(bus);
+        EntityTypesInit.register(bus);
         ModVillagers.register(bus);
         bus.addListener(this::clientSetup);
 
@@ -53,7 +54,7 @@ public class ASMain {
             ItemBlockRenderTypes.setRenderLayer(BlockInit.CONGEALED_CTHULU_BLOCK.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.CTHULU_LAMP.get(), RenderType.translucent());
             ModVillagers.registerPOIs();
-            EntityRenderers.register(ModEntityTypes.GTENT.get(), gtentRenderer::new);
+            EntityRenderers.register(EntityTypesInit.GTENT.get(), gtentRenderer::new);
         });
 
     }

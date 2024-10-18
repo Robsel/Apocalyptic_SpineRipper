@@ -5,7 +5,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import com.robsel.asmain.ASMain;
-import com.robsel.asmain.altar.AltarStoneEntity;
+import com.robsel.asmain.blockentity.AltarStoneEntity;
 
 public class BlockEntitiesInit {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, ASMain.MOD_ID);

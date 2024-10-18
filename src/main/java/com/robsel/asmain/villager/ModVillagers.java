@@ -4,7 +4,6 @@ package com.robsel.asmain.villager;
 import com.google.common.collect.ImmutableSet;
 import com.robsel.asmain.ASMain;
 import com.robsel.asmain.init.BlockInit;
-import it.zerono.mods.zerocore.lib.block.ModBlock;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.ai.village.poi.PoiType;

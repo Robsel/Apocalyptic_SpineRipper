@@ -1,7 +1,5 @@
 buildscript {
     repositories {
-        maven { name = 'Zero'
-                url = 'https://maven.zerono.it' }
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' }
         mavenCentral()
@@ -9,7 +7,6 @@ buildscript {
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
         classpath 'org.parchmentmc:librarian:1.+'
-        classpath 'it.zerono.mods.zerocore:ZeroCore2:1.18.1-2.1.9'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -25,8 +22,8 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 minecraft {
-    mappings channel: 'official', version: '1.18.1'
-    mappings channel: 'parchment', version: '2021.12.19-1.18.1'
+    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'parchment', version: '1.18.1-2022.02.13-1.18.2'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     runs {
@@ -80,17 +77,12 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-    maven {
-
-        name = 'Zero'
-        url = 'https://maven.zerono.it'
-    }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.1-39.1.0'
-    implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.10')
-    implementation fg.deobf("it.zerono.mods.zerocore:ZeroCore2:1.18.1-2.1.9")
+    minecraft 'net.minecraftforge:forge:1.18.2-40.0.12'
+    implementation fg.deobf('software.bernie.geckolib:geckolib-1.18-forge:3.0.12')
+
 }
 
 jar {
