@@ -8,6 +8,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -55,6 +56,7 @@ public class ASMain {
             ItemBlockRenderTypes.setRenderLayer(BlockInit.CONGEALED_CTHULU_BLOCK.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(BlockInit.CTHULU_LAMP.get(), RenderType.translucent());
             EntityRenderers.register(EntityInit.GTENT.get(), GTentRenderer::new);
+            EntityRenderers.register(EntityInit.CONG_CTHUL.get(), ThrownItemRenderer::new);
         });
 
     }

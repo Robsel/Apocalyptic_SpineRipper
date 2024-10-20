@@ -30,7 +30,13 @@
   // If project_start_to_heightmap is present, the y value chosen in start_height will be added to the terrain's y value.
   // So a start height that gives -5 will sink the structure 5 blocks into the terrain.
   "start_height": {
-    "below_top": 350
+    "type": "minecraft:biased_to_bottom",
+    "max_inclusive": {
+      "below_top": 355
+    },
+    "min_inclusive": {
+      "above_bottom": 0
+    }
   },
 
   // Makes our house snap to top land to spawn at. WORLD_SURFACE_WG will stop at first non-air block.
@@ -43,7 +49,7 @@
 
   // What mobs can spawn over time in the structure.
   // Make sure you add the mob to the right category (monster, creature, etc)
-  "spawn_overrides": {
+  "spawn_overrides": {/*
     "monster": {
       "bounding_box": "full", // Use the bounding box of entire structure instead of individual pieces.
       "spawns": [
@@ -71,6 +77,6 @@
           "maxCount": 4
         }
       ]
-    }
+    }*/
   }
 }
