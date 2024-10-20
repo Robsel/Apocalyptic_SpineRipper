@@ -6,24 +6,35 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
+import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
 
-public class gtent{ /* extends Animal implements IAnimatable, GeoAnimatable {
+import javax.annotation.Nullable;
 
-    private AnimationFactory factory = new AnimationFactory(this);
 
-    public gtent(EntityType<? extends Animal> entityType, Level level) {
-        super(entityType, level);
+
+public class GTentEntity   extends Animal  {
+
+    public GTentEntity(EntityType<? extends Animal> pEntityType, net.minecraft.world.level.Level pLevel) {
+        super(pEntityType, pLevel);
+    }
+    public final AnimationState idleAnimationState = new AnimationState();
+    private int idleAnimationTimeout = 0;
+
+    @Override
+    public void tick(){
+        super.tick();
+        if(this.level().isClientSide()){
+            setupAnimationStates();
+        }
     }
 
     public static AttributeSupplier setAttributes() {
@@ -45,9 +56,10 @@ public class gtent{ /* extends Animal implements IAnimatable, GeoAnimatable {
 
     }
 
+
     @Nullable
     @Override
-    public AgeableMob getBreedOffspring(ServerLevel p_146743_, AgeableMob p_146744_) {
+    public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
         return null;
     }
 
@@ -71,27 +83,24 @@ public class gtent{ /* extends Animal implements IAnimatable, GeoAnimatable {
         return 0.2F;
     }
 
-    // Animations
-
-    private <E extends IAnimatable>PlayState predicate(AnimationEvent<E> event) {
-        if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.gtent.walk", true));
-            return PlayState.CONTINUE;
+    private void setupAnimationStates() {
+        if(this.idleAnimationTimeout <= 0) {
+            this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+            this.idleAnimationState.start(this.tickCount);
+        } else {
+            --this.idleAnimationTimeout;
         }
 
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.gtent.idle", false));
-        return PlayState.CONTINUE;
+    }
+    protected void updateWalkAnimation(float pPartialTick) {
+        float f;
+        if(this.getPose() == Pose.STANDING) {
+            f = Math.min(pPartialTick*6f, 1f);
+        }
+        else {
+            f = 0f;
+        }
+        this.walkAnimation.update(f,0.2f);
     }
 
-
-    public void registerControllers(AnimationData data) {
-        data.addAnimationController(new AnimationController(this, "controller",
-                                0, this::predicate));
-    }
-
-
-    public AnimationFactory getFactory() {
-        return factory;
-    }
-    */
 }

@@ -17,16 +17,18 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class ModVillagers {/*
+public class ModVillagers {
     public static final DeferredRegister<PoiType> POI_TYPES
             = DeferredRegister.create(ForgeRegistries.POI_TYPES, ASMain.MOD_ID);
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS
-            = DeferredRegister.create(ForgeRegistries.PROFESSIONS, ASMain.MOD_ID);
+            = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, ASMain.MOD_ID);
 
     public static final RegistryObject<PoiType> CULTIST_POI = POI_TYPES.register("cultistpoi",
-            ()-> new PoiType("cultistpoi", PoiType.getBlockStates(BlockInit.CULTIST_WORKSTATION.get()),1,1));
-    public static final  RegistryObject<VillagerProfession> CULTIST = VILLAGER_PROFESSIONS.register("cultist",
-            ()-> new VillagerProfession("cultist", CULTIST_POI.get(),
+            ()-> new PoiType(ImmutableSet.copyOf(BlockInit.CULTIST_WORKSTATION.get().getStateDefinition().getPossibleStates()),
+                    1,1));
+    public static final  RegistryObject<VillagerProfession> CULTIST =
+            VILLAGER_PROFESSIONS.register("cultist", ()-> new VillagerProfession("cultist",
+                    holder -> holder.get() == CULTIST_POI.get(), holder -> holder.get() == CULTIST_POI.get(),
                     ImmutableSet.of(), ImmutableSet.of(), SoundEvents.VILLAGER_WORK_LIBRARIAN));
 
     public static void  registerPOIs(){
@@ -41,5 +43,5 @@ public class ModVillagers {/*
         POI_TYPES.register(eventBus);
         VILLAGER_PROFESSIONS.register(eventBus);
     }
-    */
+
 }

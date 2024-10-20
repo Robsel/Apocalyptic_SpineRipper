@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ItemInit.CONGEALED_CTHULU.get());
                         output.accept(ItemInit.WEIRD_BONE.get());
                         output.accept(ItemInit.TENTACLEONASTICK.get());
+                        output.accept((ItemInit.GTENT_SPAWN_EGG.get()));
 
                         //BLOCKS
 

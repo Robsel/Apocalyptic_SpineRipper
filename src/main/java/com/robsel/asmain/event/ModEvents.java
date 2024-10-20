@@ -60,28 +60,18 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        /*if(event.getType() == ModVillagers.CULTIST.get()) {
+        if(event.getType() == ModVillagers.CULTIST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.TENTACLEONASTICK.get(), 1);
-            int villagerLevel = 1;
 
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+
+            trades.get(1).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD, 12),
                     stack,4,5,0.09F));
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 27),
-                    stack,4,5,0.09F));
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 35),
+            trades.get(2).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 64),
                     stack,4,5,0.09F));
 
-            trades.get(2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 5),
-                    stack,4,5,0.09F));
-            trades.get(2).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 6),
-                    stack,4,5,0.09F));
-
-        }*/
+        }
     }
 }

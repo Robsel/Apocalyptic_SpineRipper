@@ -26,5 +26,7 @@
   "block.asmain.energy_crystal": "Energy Crystal",
   "entity.asmain.cultist": "Cultist",
   "block.asmain.cultist_workstation": "Cultist Workstation",
-  "creativetab.asmain_tab": "Apocalyptic Spineripper"
+  "creativetab.asmain_tab": "Apocalyptic Spineripper",
+  "entity.asmain.gtent": "Green Tentacle",
+  "item.asmain.congealed_cthulu": "Congealed Cthulu"
 }

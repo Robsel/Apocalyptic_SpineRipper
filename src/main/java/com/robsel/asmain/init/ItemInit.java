@@ -22,6 +22,10 @@ public class ItemInit {
     public static final RegistryObject<Item> TENTACLEONASTICK = register("tentacleonastick",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> GTENT_SPAWN_EGG = register("gtent_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.GTENT, 0x05ab36,0xd8a900,
+                    new Item.Properties()));
+
 
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

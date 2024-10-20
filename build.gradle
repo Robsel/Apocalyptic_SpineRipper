@@ -3,6 +3,7 @@ buildscript {
         maven { url = 'https://maven.minecraftforge.net' }
         maven { url = 'https://maven.parchmentmc.org' } // Parchment repository
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' } // Mixin repository
+
         mavenCentral()
     }
     dependencies {
@@ -30,6 +31,7 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 minecraft {
     mappings channel: 'official', version: '1.20.1'
     mappings channel: 'parchment', version: '2023.09.03-1.20.1'
+
 
     runs {
         client {
@@ -69,6 +71,7 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven { url = "https://maven.firstdarkdev.xyz/snapshots"}
     maven {
         name = 'GeckoLib'
         url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
@@ -83,7 +86,10 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.3.11'
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.4.9')
-    implementation("com.eliotlash.mclib:mclib:20")
+    implementation fg.deobf("com.eliotlash.mclib:mclib:20")
+    implementation fg.deobf("com.lowdragmc.shimmer:Shimmer-forge:1.20.1-0.2.4") { transitive = false }
+    implementation fg.deobf("com.lowdragmc.ldlib:ldlib-forge-1.20.1:1.0.30.d") { transitive = false }
+    implementation fg.deobf("com.lowdragmc.multiblocked2:Multiblocked2:1.20.1-1.0.10.a") { transitive = false }
 }
 
 jar {

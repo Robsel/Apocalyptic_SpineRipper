@@ -41,5 +41,10 @@
       <option name="name" value="Zero" />
       <option name="url" value="https://maven.zerono.it" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven" />
+      <option name="name" value="maven" />
+      <option name="url" value="https://maven.firstdarkdev.xyz/snapshots" />
+    </remote-repository>
   </component>
 </project>
