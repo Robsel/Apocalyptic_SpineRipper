@@ -1,53 +1,53 @@
-[20Okt.2024 14:21:38.575] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\RTXsel\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.11, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[20Okt.2024 14:21:38.579] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.3.1 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
-[20Okt.2024 14:21:38.728] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[20Okt.2024 14:21:38.821] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[20Okt.2024 14:21:39.017] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[20Okt.2024 14:21:39.123] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/RTXsel/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[20Okt.2024 14:21:39.175] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
-[20Okt.2024 14:21:39.624] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.11\427f703e065645e6ab0d183bfaee6253f474393d\javafmllanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[20Okt.2024 14:21:39.628] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.11\f59825d2e5d797a1bb3699876861d9f5cd616ad0\lowcodelanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[20Okt.2024 14:21:39.632] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.11\6624469b892cf7349addc8c7272ba0f9c1628e3f\mclanguage-1.20.1-47.3.11.jar is missing mods.toml file
-[20Okt.2024 14:21:39.636] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.11\19742efc9b2d4063f19579d80f99579725e034eb\fmlcore-1.20.1-47.3.11.jar is missing mods.toml file
-[20Okt.2024 14:21:40.003] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
-[20Okt.2024 14:21:41.572] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[20Okt.2024 14:21:41.587] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\RTXsel\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
-[20Okt.2024 14:21:41.957] [main/INFO] [mixin/]: Remapping refMap mixins.mbd2.refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:42.030] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:42.032] [main/INFO] [mixin/]: Remapping refMap ldlib-common-1.20.1-ldlib-common-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:42.033] [main/INFO] [mixin/]: Remapping refMap ldlib-forge-1.20.1-ldlib-forge-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:42.037] [main/INFO] [mixin/]: Remapping refMap Shimmer-common-Common-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:42.039] [main/INFO] [mixin/]: Remapping refMap Shimmer-forge-Forge-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
-[20Okt.2024 14:21:43.521] [pool-4-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
-[20Okt.2024 14:21:46.100] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 147 milliseconds
-[20Okt.2024 14:21:48.001] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/RTXsel/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[20Okt.2024 14:21:48.001] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/RTXsel/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[20Okt.2024 14:21:48.023] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20Okt.2024 14:21:48.030] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[20Okt.2024 14:21:48.178] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
-[20Okt.2024 14:21:48.497] [modloading-worker-0/INFO] [Multiblocked2/]: Multiblocked2 is initializing on platform: Forge
-[20Okt.2024 14:21:48.497] [modloading-worker-0/INFO] [LowDragLib/]: LowDragLib is initializing on platform: Forge
-[20Okt.2024 14:21:48.528] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.11, for MC 1.20.1 with MCP 20230612.114412
-[20Okt.2024 14:21:48.574] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.11 Initialized
-[20Okt.2024 14:21:49.354] [Render thread/INFO] [Multiblocked2/]: Loading recipe types
-[20Okt.2024 14:21:49.356] [Render thread/INFO] [Multiblocked2/]: Loading machines
-[20Okt.2024 14:21:50.409] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
-[20Okt.2024 14:21:50.833] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, ldlib
-[20Okt.2024 14:21:51.034] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[20Okt.2024 14:21:51.046] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.bbmodel, ignoring
-[20Okt.2024 14:21:51.046] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.mtl, ignoring
-[20Okt.2024 14:21:51.047] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.obj, ignoring
-[20Okt.2024 14:21:51.047] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.txt, ignoring
-[20Okt.2024 14:21:51.047] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_with_Tiled_DH_Back.png, ignoring
-[20Okt.2024 14:21:51.049] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_E.java, ignoring
-[20Okt.2024 14:21:51.049] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_N.java, ignoring
-[20Okt.2024 14:21:51.050] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_S.java, ignoring
-[20Okt.2024 14:21:51.050] [Worker-Main-3/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_W.java, ignoring
-[20Okt.2024 14:21:51.126] [Worker-Main-10/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
-[20Okt.2024 14:21:51.176] [Worker-Main-7/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/Altar_Stone_Inscribed.png, ignoring
-[20Okt.2024 14:21:51.176] [Worker-Main-7/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/Altar_Stone_with_Deepslate.png, ignoring
-[20Okt.2024 14:21:51.178] [Worker-Main-7/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/dh_side_bot corner.png, ignoring
-[20Okt.2024 14:21:51.975] [Worker-Main-5/WARN] [net.minecraft.client.resources.model.ModelBakery/]: minecraft:block
+[20Okt.2024 20:40:27.882] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientuserdev, --version, MOD_DEV, --assetIndex, 5, --assetsDir, C:\Users\RTXsel\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.11, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[20Okt.2024 20:40:27.886] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.3.1 by Oracle Corporation; OS Windows 10 arch amd64 version 10.0
+[20Okt.2024 20:40:28.027] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[20Okt.2024 20:40:28.109] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[20Okt.2024 20:40:28.336] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[20Okt.2024 20:40:28.458] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/RTXsel/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[20Okt.2024 20:40:28.516] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 2060/PCIe/SSE2 GL version 4.6.0 NVIDIA 560.94, NVIDIA Corporation
+[20Okt.2024 20:40:28.842] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.11\427f703e065645e6ab0d183bfaee6253f474393d\javafmllanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[20Okt.2024 20:40:28.845] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.11\f59825d2e5d797a1bb3699876861d9f5cd616ad0\lowcodelanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[20Okt.2024 20:40:28.849] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.11\6624469b892cf7349addc8c7272ba0f9c1628e3f\mclanguage-1.20.1-47.3.11.jar is missing mods.toml file
+[20Okt.2024 20:40:28.852] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\RTXsel\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.11\19742efc9b2d4063f19579d80f99579725e034eb\fmlcore-1.20.1-47.3.11.jar is missing mods.toml file
+[20Okt.2024 20:40:29.073] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 3 dependencies adding them to mods collection
+[20Okt.2024 20:40:30.567] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[20Okt.2024 20:40:30.584] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientuserdev' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\RTXsel\.gradle\caches\forge_gradle\assets, --assetIndex, 5]
+[20Okt.2024 20:40:30.979] [main/INFO] [mixin/]: Remapping refMap mixins.mbd2.refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:31.056] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:31.058] [main/INFO] [mixin/]: Remapping refMap ldlib-common-1.20.1-ldlib-common-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:31.059] [main/INFO] [mixin/]: Remapping refMap ldlib-forge-1.20.1-ldlib-forge-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:31.062] [main/INFO] [mixin/]: Remapping refMap Shimmer-common-Common-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:31.065] [main/INFO] [mixin/]: Remapping refMap Shimmer-forge-Forge-refmap.json using D:\Apocalyptic_SpineRipper\build\createSrgToMcp\output.srg
+[20Okt.2024 20:40:32.513] [pool-4-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.3.5).
+[20Okt.2024 20:40:35.185] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 188 Datafixer optimizations took 157 milliseconds
+[20Okt.2024 20:40:37.054] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/RTXsel/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[20Okt.2024 20:40:37.054] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/RTXsel/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[20Okt.2024 20:40:37.069] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[20Okt.2024 20:40:37.077] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[20Okt.2024 20:40:37.231] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.1 build 7
+[20Okt.2024 20:40:37.540] [modloading-worker-0/INFO] [Multiblocked2/]: Multiblocked2 is initializing on platform: Forge
+[20Okt.2024 20:40:37.540] [modloading-worker-0/INFO] [LowDragLib/]: LowDragLib is initializing on platform: Forge
+[20Okt.2024 20:40:37.563] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.11, for MC 1.20.1 with MCP 20230612.114412
+[20Okt.2024 20:40:37.607] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.11 Initialized
+[20Okt.2024 20:40:38.243] [Render thread/INFO] [Multiblocked2/]: Loading recipe types
+[20Okt.2024 20:40:38.244] [Render thread/INFO] [Multiblocked2/]: Loading machines
+[20Okt.2024 20:40:39.127] [Render thread/INFO] [net.minecraftforge.gametest.ForgeGameTestHooks/]: Enabled Gametest Namespaces: []
+[20Okt.2024 20:40:39.440] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, ldlib
+[20Okt.2024 20:40:39.600] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[20Okt.2024 20:40:39.633] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.bbmodel, ignoring
+[20Okt.2024 20:40:39.634] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.mtl, ignoring
+[20Okt.2024 20:40:39.634] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.obj, ignoring
+[20Okt.2024 20:40:39.634] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_Inscribed.txt, ignoring
+[20Okt.2024 20:40:39.634] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/Altar_Stone_with_Tiled_DH_Back.png, ignoring
+[20Okt.2024 20:40:39.636] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_E.java, ignoring
+[20Okt.2024 20:40:39.637] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_N.java, ignoring
+[20Okt.2024 20:40:39.637] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_S.java, ignoring
+[20Okt.2024 20:40:39.637] [Worker-Main-11/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:models/block/VoxelShape_W.java, ignoring
+[20Okt.2024 20:40:39.653] [Worker-Main-8/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.0.06.hex, loading
+[20Okt.2024 20:40:39.706] [Worker-Main-1/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/Altar_Stone_Inscribed.png, ignoring
+[20Okt.2024 20:40:39.706] [Worker-Main-1/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/Altar_Stone_with_Deepslate.png, ignoring
+[20Okt.2024 20:40:39.708] [Worker-Main-1/ERROR] [net.minecraft.Util/]: Invalid path in pack: asmain:textures/block/dh_side_bot corner.png, ignoring
+[20Okt.2024 20:40:40.399] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelBakery/]: minecraft:block
 java.io.FileNotFoundException: minecraft:models/block.json
 	at net.minecraft.client.resources.model.ModelBakery.loadBlockModel(ModelBakery.java:417) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at net.minecraft.client.resources.model.ModelBakery.loadModel(ModelBakery.java:262) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
@@ -65,8 +65,8 @@ java.io.FileNotFoundException: minecraft:models/block.json
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[20Okt.2024 14:21:51.977] [Worker-Main-5/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'asmain:blockstates/altar_controller.json' missing model for variant: 'asmain:altar_controller#'
-[20Okt.2024 14:21:51.989] [Worker-Main-5/WARN] [net.minecraft.client.resources.model.ModelBakery/]: asmain:altar_controller#inventory
+[20Okt.2024 20:40:40.401] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelBakery/]: Exception loading blockstate definition: 'asmain:blockstates/altar_controller.json' missing model for variant: 'asmain:altar_controller#'
+[20Okt.2024 20:40:40.406] [Worker-Main-6/WARN] [net.minecraft.client.resources.model.ModelBakery/]: asmain:altar_controller#inventory
 java.io.FileNotFoundException: asmain:models/item/altar_controller.json
 	at net.minecraft.client.resources.model.ModelBakery.loadBlockModel(ModelBakery.java:417) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at net.minecraft.client.resources.model.ModelBakery.loadModel(ModelBakery.java:266) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
@@ -82,55 +82,53 @@ java.io.FileNotFoundException: asmain:models/item/altar_controller.json
 	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655) ~[?:?]
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622) ~[?:?]
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165) ~[?:?]
-[20Okt.2024 14:21:52.440] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 47.3.11 Target: null
-[20Okt.2024 14:21:54.397] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[20Okt.2024 14:21:54.397] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[20Okt.2024 14:21:54.432] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Lautsprecher (Realtek High Definition Audio)
-[20Okt.2024 14:21:54.432] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[20Okt.2024 14:21:54.522] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[20Okt.2024 14:21:54.529] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[20Okt.2024 14:21:54.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[20Okt.2024 14:21:54.530] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[20Okt.2024 14:21:54.531] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[20Okt.2024 14:21:54.533] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[20Okt.2024 14:21:54.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[20Okt.2024 14:21:54.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[20Okt.2024 14:21:54.535] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[20Okt.2024 14:21:54.633] [Render thread/INFO] [Shimmer/]: inject shader vsh particle.
-[20Okt.2024 14:21:54.650] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_solid.
-[20Okt.2024 14:21:54.651] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_solid.
-[20Okt.2024 14:21:54.659] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_cutout_mipped.
-[20Okt.2024 14:21:54.660] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_cutout_mipped.
-[20Okt.2024 14:21:54.668] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_cutout.
-[20Okt.2024 14:21:54.669] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_cutout.
-[20Okt.2024 14:21:54.675] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_translucent.
-[20Okt.2024 14:21:54.683] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_armor_cutout_no_cull.
-[20Okt.2024 14:21:54.690] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_solid.
-[20Okt.2024 14:21:54.696] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout.
-[20Okt.2024 14:21:54.703] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout_no_cull.
-[20Okt.2024 14:21:54.706] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout_no_cull_z_offset.
-[20Okt.2024 14:21:54.710] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_translucent_cull.
-[20Okt.2024 14:21:54.715] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_translucent.
-[20Okt.2024 14:21:54.719] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[20Okt.2024 14:21:54.719] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_smooth_cutout.
-[20Okt.2024 14:21:54.724] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_decal.
-[20Okt.2024 14:21:54.729] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_no_outline.
-[20Okt.2024 14:21:54.779] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find sampler named Sampler2 in the specified shader program.
-[20Okt.2024 14:21:54.779] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find uniform named Light0_Direction in the specified shader program.
-[20Okt.2024 14:21:54.779] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find uniform named Light1_Direction in the specified shader program.
-[20Okt.2024 14:21:54.878] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[20Okt.2024 14:21:54.879] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[20Okt.2024 14:21:54.880] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[20Okt.2024 14:21:54.901] [Render thread/INFO] [Shimmer/]: buildIn shimmer configuration is enabled, this can be disabled by config file
-[20Okt.2024 14:21:55.129] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[20Okt.2024 14:22:00.053] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[20Okt.2024 14:22:00.105] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item: Object did not get ID it asked for. Name: asmain:gtent_spawn_egg Expected: 1260 Got: 1301
-[20Okt.2024 14:22:00.106] [Render thread/WARN] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type: Object did not get ID it asked for. Name: asmain:gtent Expected: 124 Got: 132
-[20Okt.2024 14:22:01.467] [Worker-Main-9/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/pickaxe as it is missing following references: asmain:altar_crystal (from main), 
+[20Okt.2024 20:40:40.407] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 47.3.11 Target: null
+[20Okt.2024 20:40:42.242] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[20Okt.2024 20:40:42.242] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[20Okt.2024 20:40:42.286] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Lautsprecher (Realtek High Definition Audio)
+[20Okt.2024 20:40:42.287] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[20Okt.2024 20:40:42.401] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[20Okt.2024 20:40:42.410] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[20Okt.2024 20:40:42.410] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[20Okt.2024 20:40:42.411] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[20Okt.2024 20:40:42.412] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[20Okt.2024 20:40:42.415] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[20Okt.2024 20:40:42.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[20Okt.2024 20:40:42.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[20Okt.2024 20:40:42.417] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[20Okt.2024 20:40:42.502] [Render thread/INFO] [Shimmer/]: inject shader vsh particle.
+[20Okt.2024 20:40:42.513] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_solid.
+[20Okt.2024 20:40:42.514] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_solid.
+[20Okt.2024 20:40:42.517] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_cutout_mipped.
+[20Okt.2024 20:40:42.518] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_cutout_mipped.
+[20Okt.2024 20:40:42.523] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_cutout.
+[20Okt.2024 20:40:42.524] [Render thread/INFO] [Shimmer/]: inject shader fsh rendertype_cutout.
+[20Okt.2024 20:40:42.528] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_translucent.
+[20Okt.2024 20:40:42.533] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_armor_cutout_no_cull.
+[20Okt.2024 20:40:42.536] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_solid.
+[20Okt.2024 20:40:42.539] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout.
+[20Okt.2024 20:40:42.542] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout_no_cull.
+[20Okt.2024 20:40:42.546] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_cutout_no_cull_z_offset.
+[20Okt.2024 20:40:42.550] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_translucent_cull.
+[20Okt.2024 20:40:42.553] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_translucent.
+[20Okt.2024 20:40:42.558] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[20Okt.2024 20:40:42.558] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_smooth_cutout.
+[20Okt.2024 20:40:42.563] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_decal.
+[20Okt.2024 20:40:42.566] [Render thread/INFO] [Shimmer/]: inject shader vsh rendertype_entity_no_outline.
+[20Okt.2024 20:40:42.609] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find sampler named Sampler2 in the specified shader program.
+[20Okt.2024 20:40:42.609] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find uniform named Light0_Direction in the specified shader program.
+[20Okt.2024 20:40:42.609] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader shimmer:rendertype_armor_cutout_no_cull could not find uniform named Light1_Direction in the specified shader program.
+[20Okt.2024 20:40:42.734] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[20Okt.2024 20:40:42.736] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[20Okt.2024 20:40:42.736] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[20Okt.2024 20:40:42.765] [Render thread/INFO] [Shimmer/]: buildIn shimmer configuration is enabled, this can be disabled by config file
+[20Okt.2024 20:40:42.992] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[20Okt.2024 20:40:46.546] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[20Okt.2024 20:40:48.033] [Worker-Main-4/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:mineable/pickaxe as it is missing following references: asmain:altar_crystal (from main), 
 	asmain:altar_fence (from main)
-[20Okt.2024 14:22:01.468] [Worker-Main-9/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:needs_iron_tool as it is missing following references: asmain:altar_crystal (from main), 
+[20Okt.2024 20:40:48.035] [Worker-Main-4/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag minecraft:needs_iron_tool as it is missing following references: asmain:altar_crystal (from main), 
 	asmain:altar_fence (from main)
-[20Okt.2024 14:22:01.475] [Worker-Main-3/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file asmain:blocks/congealed_cthulu_block from asmain:loot_tables/blocks/congealed_cthulu_block.json
+[20Okt.2024 20:40:48.046] [Worker-Main-7/ERROR] [net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener/]: Couldn't parse data file asmain:blocks/congealed_cthulu_block from asmain:loot_tables/blocks/congealed_cthulu_block.json
 com.google.gson.JsonParseException: com.google.gson.stream.MalformedJsonException: Expected value at line 3 column 1 path $.type
 	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:524) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	at net.minecraft.util.GsonHelper.fromJson(GsonHelper.java:529) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
@@ -153,40 +151,43 @@ Caused by: com.google.gson.stream.MalformedJsonException: Expected value at line
 	at com.google.gson.internal.bind.TypeAdapters$34$1.read(TypeAdapters.java:1007) ~[gson-2.10.jar%23130!/:?]
 	at net.minecraft.util.GsonHelper.fromNullableJson(GsonHelper.java:522) ~[forge-1.20.1-47.3.11_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/:?]
 	... 11 more
-[20Okt.2024 14:22:01.896] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[20Okt.2024 14:22:02.002] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1272 advancements
-[20Okt.2024 14:22:02.480] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
-[20Okt.2024 14:22:02.480] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[20Okt.2024 14:22:02.820] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[20Okt.2024 14:22:04.506] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[20Okt.2024 14:22:04.506] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[20Okt.2024 14:22:04.506] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[20Okt.2024 14:22:04.506] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[20Okt.2024 14:22:04.837] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
-[20Okt.2024 14:22:05.301] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[20Okt.2024 14:22:05.302] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2472 ms
-[20Okt.2024 14:22:05.451] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[20Okt.2024 14:22:05.454] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[20Okt.2024 14:22:05.567] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
-[20Okt.2024 14:22:05.958] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
-[20Okt.2024 14:22:06.008] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:6898ab2a] logged in with entity id 92 at (25.564166475600516, -62.0, 1.5662728829424462)
-[20Okt.2024 14:22:06.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[20Okt.2024 14:22:06.960] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 33 advancements
-[20Okt.2024 14:23:10.850] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[20Okt.2024 14:23:10.858] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:overworld
-[20Okt.2024 14:23:10.873] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_nether
-[20Okt.2024 14:23:10.874] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_end
-[20Okt.2024 14:23:12.668] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[20Okt.2024 14:23:12.714] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[20Okt.2024 14:23:12.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[20Okt.2024 14:23:12.725] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
-[20Okt.2024 14:23:12.768] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[20Okt.2024 14:23:12.769] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[20Okt.2024 14:23:12.769] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[20Okt.2024 14:23:13.171] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:overworld
-[20Okt.2024 14:23:13.400] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_nether
-[20Okt.2024 14:23:13.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_end
-[20Okt.2024 14:23:13.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (TEsting): All chunks are saved
-[20Okt.2024 14:23:13.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20Okt.2024 14:23:13.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20Okt.2024 14:23:13.439] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20Okt.2024 20:40:48.478] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
+[20Okt.2024 20:40:48.571] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1272 advancements
+[20Okt.2024 20:40:49.115] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.20.1
+[20Okt.2024 20:40:49.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[20Okt.2024 20:40:49.448] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[20Okt.2024 20:40:50.958] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Okt.2024 20:40:50.958] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Okt.2024 20:40:50.958] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Okt.2024 20:40:50.977] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Okt.2024 20:40:51.477] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 4%
+[20Okt.2024 20:40:51.872] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[20Okt.2024 20:40:51.885] [Render thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2418 ms
+[20Okt.2024 20:40:52.013] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[20Okt.2024 20:40:52.016] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[20Okt.2024 20:40:52.138] [Render thread/WARN] [io.netty.util.internal.SystemPropertyUtil/]: Unable to parse the boolean system property 'java.net.preferIPv6Addresses':system - using the default value: false
+[20Okt.2024 20:40:52.517] [Netty Local Client IO #0/INFO] [net.minecraftforge.network.NetworkHooks/]: Connected to a modded server.
+[20Okt.2024 20:40:52.562] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:f3b1bf79] logged in with entity id 92 at (9.224969577801124, -59.0, 34.941612804719995)
+[20Okt.2024 20:40:52.621] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[20Okt.2024 20:40:53.363] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 33 advancements
+[20Okt.2024 20:45:00.402] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Applied enchantment Efficiency V to Dev's item]
+[20Okt.2024 20:45:00.404] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Applied enchantment Efficiency V to Dev's item
+[20Okt.2024 20:45:14.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Survival Mode]
+[20Okt.2024 20:45:14.059] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Survival Mode
+[20Okt.2024 20:45:17.792] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:block.fungus.hit
+[20Okt.2024 20:46:58.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Set own game mode to Creative Mode]
+[20Okt.2024 20:46:58.822] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Set own game mode to Creative Mode
+[20Okt.2024 20:53:01.972] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[20Okt.2024 20:53:01.989] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[20Okt.2024 20:53:01.989] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[20Okt.2024 20:53:02.003] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Stopping singleplayer server as player logged out
+[20Okt.2024 20:53:02.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[20Okt.2024 20:53:02.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[20Okt.2024 20:53:02.023] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[20Okt.2024 20:53:02.449] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:overworld
+[20Okt.2024 20:53:02.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_end
+[20Okt.2024 20:53:02.753] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[TEsting]'/minecraft:the_nether
+[20Okt.2024 20:53:02.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (TEsting): All chunks are saved
+[20Okt.2024 20:53:02.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20Okt.2024 20:53:02.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20Okt.2024 20:53:02.771] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

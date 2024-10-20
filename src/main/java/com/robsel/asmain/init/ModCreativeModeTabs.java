@@ -56,6 +56,9 @@ public class ModCreativeModeTabs {
                         output.accept(BlockInit.DH_ORE_SIDE.get());
                         output.accept(BlockInit.DH_ORE_CORNER.get());
                         output.accept(BlockInit.WEIRD_BONE_BLOCK.get());
+                        output.accept(BlockInit.DH_ORE_SIDEM.get());
+                        output.accept(BlockInit.DH_ORE_SIDET.get());
+                        output.accept(BlockInit.DH_ORE_CORNERT.get());
 
 
                     })

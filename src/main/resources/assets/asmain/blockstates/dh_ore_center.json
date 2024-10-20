@@ -16,13 +16,14 @@
         "model": "asmain:block/dh_ore_center",
         "y": 270
       },
-    "facing=down": {
-      "model": "asmain:block/dh_ore_center",
-      "x": 90
-    },
     "facing=up": {
       "model": "asmain:block/dh_ore_center",
-      "x": -90
+      "y": 270
+    },
+    "facing=down": {
+      "model": "asmain:block/dh_ore_center",
+      "y": 270,
+      "x": 90
     }
   }
 }

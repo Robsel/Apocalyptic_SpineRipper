@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 0,
+      "x": 180
+    },
+    "facing=east": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 90,
+      "x": 180
+    },
+    "facing=south": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 180,
+      "x": 180
+    },
+    "facing=west": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 270,
+      "x": 180
+    },
+    "facing=up": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 270,
+      "x": 180
+    },
+    "facing=down": {
+      "model": "asmain:block/dh_ore_sidet",
+      "y": 270,
+      "x": 180
+    }
+  }
+}

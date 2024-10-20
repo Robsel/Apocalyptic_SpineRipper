@@ -90,6 +90,32 @@ public class BlockInit {
                     .requiresCorrectToolForDrops()),
             object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
+    public static final RegistryObject<Block> DH_ORE_CORNERT = register("dh_ore_cornert",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
+
+    public static final RegistryObject<Block> DH_ORE_SIDEM = register("dh_ore_sidem",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
+    public static final RegistryObject<Block> DH_ORE_SIDET = register("dh_ore_sidet",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
+
     public static final RegistryObject<Block> DH_ORE_SIDE = register("dh_ore_side",
             () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.COLOR_GREEN)

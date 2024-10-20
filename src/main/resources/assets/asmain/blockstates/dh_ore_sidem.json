@@ -1,27 +1,27 @@
 {
   "variants": {
     "facing=north": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 0
     },
     "facing=east": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 90
     },
     "facing=south": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 180
     },
     "facing=west": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 270
     },
     "facing=up": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 270
     },
     "facing=down": {
-      "model": "asmain:block/dh_ore_corner",
+      "model": "asmain:block/dh_ore_sidem",
       "y": 270
     }
   }

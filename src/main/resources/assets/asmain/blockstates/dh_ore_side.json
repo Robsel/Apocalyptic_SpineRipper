@@ -16,13 +16,13 @@
       "model": "asmain:block/dh_ore_side",
       "y": 270
     },
-    "facing=down": {
-      "model": "asmain:block/dh_ore_side",
-      "x": 90
-    },
     "facing=up": {
       "model": "asmain:block/dh_ore_side",
-      "x": -90
+      "y": 270
+    },
+    "facing=down": {
+      "model": "asmain:block/dh_ore_side",
+      "y": 270
     }
   }
 }

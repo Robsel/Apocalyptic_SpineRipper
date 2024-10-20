@@ -27,6 +27,7 @@ public class Rotatable_Madness extends Block {
 */
     public BlockState getStateForPlacement(BlockPlaceContext ctx) {
         return this.defaultBlockState().setValue(FACING, ctx.getNearestLookingDirection().getOpposite());
+
     }
 
     public BlockState rotate(BlockState state, Rotation rotation) {
