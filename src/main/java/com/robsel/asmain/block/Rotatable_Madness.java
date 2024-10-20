@@ -19,12 +19,12 @@ public class Rotatable_Madness extends Block {
 
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
-
+/* TODO: how to make xp drop
     @Override
     public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortune, int silktouch) {
         return 15;
     }
-
+*/
     public BlockState getStateForPlacement(BlockPlaceContext ctx) {
         return this.defaultBlockState().setValue(FACING, ctx.getNearestLookingDirection().getOpposite());
     }

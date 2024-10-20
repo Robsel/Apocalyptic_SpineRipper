@@ -16,7 +16,6 @@ import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.ScreenOpenEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
@@ -41,7 +40,7 @@ public class ModEvents {
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
         ItemStack heldItem = event.getItemStack();
-        Level world = event.getWorld();
+        Level world = event.getLevel();
         BlockPos clickedPos = event.getPos();
         BlockState clickedBlockState = world.getBlockState(clickedPos);  // Get the block at the clicked position
 
@@ -61,7 +60,7 @@ public class ModEvents {
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        if(event.getType() == ModVillagers.CULTIST.get()) {
+        /*if(event.getType() == ModVillagers.CULTIST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.TENTACLEONASTICK.get(), 1);
             int villagerLevel = 1;
@@ -83,6 +82,6 @@ public class ModEvents {
                     new ItemStack(Items.EMERALD, 6),
                     stack,4,5,0.09F));
 
-        }
+        }*/
     }
 }

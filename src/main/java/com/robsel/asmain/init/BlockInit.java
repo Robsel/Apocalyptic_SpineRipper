@@ -11,8 +11,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -28,122 +29,178 @@ public class BlockInit {
 
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 
-    //
-    //FUNCTIONAL BLOCKS
-    //
+    // FUNCTIONAL BLOCKS
     public static final RegistryObject<Block> CTHULU_LAMP = register("cthulu_lamp",
-            () -> new Cthulu_Lamp(BlockBehaviour.Properties.of(Material.AMETHYST, MaterialColor.COLOR_GREEN).strength(0.9f)
-                    .sound(SoundType.LANTERN).noOcclusion()
+            () -> new Cthulu_Lamp(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)  // Using MapColor instead of MaterialColor
+                    .strength(0.9f)
+                    .sound(SoundType.LANTERN)
+                    .noOcclusion()
                     .lightLevel((state) -> state.getValue(Cthulu_Lamp.CLICKED) ? 15 : 0)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));  // No direct tab here
 
-    //
-    //WALLS
-    //
-
+    // WALLS
     public static final RegistryObject<Block> DARK_WALL = register("dark_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new WallBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));  // No direct tab
 
     public static final RegistryObject<Block> DARK_GATE = register("dark_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops(),
+                    WoodType.WARPED),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));  // No direct tab
 
-    //
-    //BLOCKS
-    //
-
+    // BLOCKS
     public static final RegistryObject<Block> CULTIST_WORKSTATION = register("cultist_workstation",
-            () -> new Block(BlockBehaviour.Properties.of(Material.NETHER_WOOD, MaterialColor.COLOR_GREEN).strength(0.7f)
-                    .sound(SoundType.LADDER).explosionResistance(25f)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(0.7f)
+                    .sound(SoundType.LADDER)
+                    .explosionResistance(25f)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));  // No direct tab
 
     public static final RegistryObject<Block> CONGEALED_CTHULU_BLOCK = register("congealed_cthulu_block",
-            () -> new HalfTransparentBlock(BlockBehaviour.Properties.of(Material.SPONGE, MaterialColor.COLOR_GREEN).strength(0.7f)
-                    .sound(SoundType.SLIME_BLOCK).explosionResistance(20f).noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-    //
-    //DIRECTIONAL ORES
-    //
-    public static final RegistryObject<Block> DH_ORE_CENTER = register(
-            "dh_ore_center",
-            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f).sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new HalfTransparentBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(0.7f)
+                    .sound(SoundType.SLIME_BLOCK)
+                    .explosionResistance(20f)
+                    .noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));  // No direct tab
+
+    // DIRECTIONAL ORES
+    public static final RegistryObject<Block> DH_ORE_CENTER = register("dh_ore_center",
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> DH_ORE_CORNER = register("dh_ore_corner",
-            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> DH_ORE_SIDE = register("dh_ore_side",
-            () -> new Rotatable_Madness(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-    //
-    //ORES
-    //
+            () -> new Rotatable_Madness(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
+    // ORES
     public static final RegistryObject<Block> DH_ORE = register("dh_ore",
-            () -> new OreBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops(), UniformInt.of(8, 11)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops(),
+                    UniformInt.of(8, 11)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> DH_ORE_PED = register("dh_ore_ped",
-            () -> new OreBlock(BlockBehaviour.Properties.of(Material.MOSS, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.FUNGUS).requiresCorrectToolForDrops(), UniformInt.of(12, 20)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.FUNGUS)
+                    .requiresCorrectToolForDrops(),
+                    UniformInt.of(12, 20)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> WEIRD_BONE_BLOCK = register("weird_bone_block",
-            () -> new Weird_Bone(BlockBehaviour.Properties.of(Material.ICE_SOLID, MaterialColor.COLOR_GREEN).noOcclusion().strength(3.0f)
-                    .sound(SoundType.AMETHYST_CLUSTER).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
-    //
-    //ALTAR
-    //
+            () -> new Weird_Bone(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .noOcclusion()
+                    .strength(3.0f)
+                    .sound(SoundType.AMETHYST_CLUSTER)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
+    // ALTAR
     public static final RegistryObject<Block> ALTAR_STONE_CONTROLLER = register("altar_controller",
-            () -> new AltarStoneInsBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new AltarStoneInsBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
+
     public static final RegistryObject<Block> ALTAR_MAIN = register("altar_main",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_FRAME = register("altar_frame",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_TABLET = register("altar_tablet",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_PED = register("altar_ped",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ENERGY_CRYSTAL = register("energy_crystal",
-            () -> new Energy_Crystal(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).noOcclusion().strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Energy_Crystal(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .noOcclusion()
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_SLAB = register("altar_slab",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_SACR = register("altar_sacr",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     public static final RegistryObject<Block> ALTAR_BOOST = register("altar_boost",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_GREEN).strength(3.0f)
-                    .sound(SoundType.ANCIENT_DEBRIS).requiresCorrectToolForDrops()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(ASMain.ASMAIN_TAB)));
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f)
+                    .sound(SoundType.ANCIENT_DEBRIS)
+                    .requiresCorrectToolForDrops()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
         return BLOCKS.register(name, block);

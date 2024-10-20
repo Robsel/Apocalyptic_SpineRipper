@@ -26,11 +26,12 @@ public class Weird_Bone  extends Block {
         super(properties);
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.NORTH));
     }
+    /* TODO: How to make exp drop
     @Override
     public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortune, int silktouch) {
         return 30;
     }
-
+*/
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.box(7, 13, 8, 9, 15, 9),
             Block.box(9, 14, 8, 10, 16, 9),

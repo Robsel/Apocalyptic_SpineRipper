@@ -25,5 +25,6 @@
   "block.asmain.dark_gate": "Dark Gate",
   "block.asmain.energy_crystal": "Energy Crystal",
   "entity.asmain.cultist": "Cultist",
-  "block.asmain.cultist_workstation": "Cultist Workstation"
+  "block.asmain.cultist_workstation": "Cultist Workstation",
+  "creativetab.asmain_tab": "Apocalyptic Spineripper"
 }
