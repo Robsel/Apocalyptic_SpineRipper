@@ -19,6 +19,7 @@ public class Congealed_Cthulu extends Item {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
         pLevel.playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ARMOR_EQUIP_TURTLE, SoundSource.NEUTRAL, 0.5F, 0.4F / (pLevel.getRandom().nextFloat() * 0.4F + 0.8F));
+
         if (!pLevel.isClientSide) {
             Congealed_CthuluEntity congealedCthulu = new Congealed_CthuluEntity(pLevel, pPlayer);
             congealedCthulu.setItem(itemstack);
@@ -30,6 +31,6 @@ public class Congealed_Cthulu extends Item {
         if (!pPlayer.getAbilities().instabuild) {
             itemstack.shrink(1);
         }
-        return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide);
+        return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
 }
 }
