@@ -14,14 +14,12 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 
 public class Congealed_CthuluEntity extends ThrowableItemProjectile {
-    public Congealed_CthuluEntity(EntityType<? extends ThrowableItemProjectile> pEntityType, Level pLevel) {
-        super(pEntityType, pLevel);
+    public Congealed_CthuluEntity(EntityType<? extends Congealed_CthuluEntity> pEntityType, Level pLevel) {super(pEntityType, pLevel);
     }
     public Congealed_CthuluEntity(Level pLevel) {
         super(EntityInit.CONG_CTHUL.get(), pLevel);
     }
-    public Congealed_CthuluEntity(Level pLevel, double pX, double pY, double pZ) {
-        super(EntityInit.CONG_CTHUL.get(), pX, pY, pZ, pLevel);
+    public Congealed_CthuluEntity(Level pLevel, double pX, double pY, double pZ) {super(EntityInit.CONG_CTHUL.get(), pX, pY, pZ, pLevel);
     }
 
     public Congealed_CthuluEntity(Level pLevel, LivingEntity livingEntity) {

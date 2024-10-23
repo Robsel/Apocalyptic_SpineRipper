@@ -2,6 +2,7 @@ package com.robsel.asmain.init;
 
 import com.robsel.asmain.ASMain;
 import com.robsel.asmain.item.Congealed_Cthulu;
+import com.robsel.asmain.item.Sockteeths;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +17,9 @@ public class ItemInit {
 
     public static final RegistryObject<Item> CONGEALED_CTHULU = register("congealed_cthulu",
             () -> new Congealed_Cthulu(new Item.Properties()));
+
+    public static final RegistryObject<Item> SOCKTEETHS = register("sockteeths",
+            () -> new Sockteeths(new Item.Properties()));
 
     public static final RegistryObject<Item> WEIRD_BONE = register("weird_bone",
             () -> new Item(new Item.Properties()));
